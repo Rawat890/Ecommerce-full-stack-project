@@ -1,7 +1,7 @@
 import Razorpay from 'razorpay';
 import crypto from 'crypto';
-import Transaction from '../models/transaction.model';
-import Order from '../models/order.model';
+import Transaction from '../models/transaction.model.js';
+import Order from '../models/order.model.js';
 
 export const createTransaction = async (req, res) => {
  const { amount, userId } = req.body;

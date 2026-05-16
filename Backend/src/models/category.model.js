@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 
 const CategorySchema = new Schema({
  name: { type: String, required: true },
- image_url: { type: String, required: true},
+ image_uri: { type: String, required: true},
  createdAt: { type: Date, default: Date.now },
  updatedAt: { type: Date, default: Date.now },
  products:[{type: mongoose.Schema.Types.ObjectId, ref: "Product"}]

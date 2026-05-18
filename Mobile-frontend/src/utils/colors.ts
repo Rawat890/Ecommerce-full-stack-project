@@ -55,3 +55,12 @@ export const COLORS = {
   ringColor: "#4EC8C8",
   secondary2: "#A8E0E0",
 };
+
+export enum BASIC_COLORS {
+  primary = '#FFC201',
+  active = '#1054E8',
+  inactive = '#666',
+  lightText = "#222",
+  background = '#fff',
+  text = '#222',
+}

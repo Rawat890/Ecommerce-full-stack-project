@@ -26,10 +26,10 @@ export const dynamicDashboardData = [
     {
         type: "ad_carousal",
         data: [
-            { id: 1, image_uri: require('@assets/images/banner-min.png'), path: "/ad1" },
-            { id: 2, image_uri: require('@assets/images/banner-min2.png'), path: "/ad2" },
-            { id: 3, image_uri: require('@assets/images/banner-min3.png'), path: "/ad2" },
-            { id: 4, image_uri: require('@assets/images/banner-min4.png'), path: "/ad2" },
+            { id: 1, image_uri: require('../assets/images/banner-min.png'), path: "/ad1" },
+            { id: 2, image_uri: require('../assets/images/banner-min2.png'), path: "/ad2" },
+            { id: 3, image_uri: require('../assets/images/banner-min3.png'), path: "/ad2" },
+            { id: 4, image_uri: require('../assets/images/banner-min4.png'), path: "/ad2" },
         ],
     },
     {

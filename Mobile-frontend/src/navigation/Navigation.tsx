@@ -3,9 +3,9 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SCREENS } from '../utils/routes';
-import Splash from '../screens/Splash';
-import Home from '../screens/Home';
 import { navigationRef } from '../utils/navigationService';
+import Splash from '../modules/onboard';
+import MainNavigator from './MainNavigator';
 
 const Stack = createNativeStackNavigator();
 const Navigation = () => {
@@ -18,7 +18,7 @@ const Navigation = () => {
    initialRouteName={SCREENS.Splash}
    >
     <Stack.Screen name={SCREENS.Splash} component={Splash} />
-    <Stack.Screen name={SCREENS.Home} component={Home} />
+    <Stack.Screen name={SCREENS.MainNavigator} component={MainNavigator} />
    </Stack.Navigator>
   </NavigationContainer>
  )

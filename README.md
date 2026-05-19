@@ -6,7 +6,7 @@ A full-featured, cross-platform mobile e-commerce application built with **React
 
 ## 📱 Screenshots
 
-> _Add your screenshots or demo GIFs here_
+> _screenshots or demo GIFs here_
 
 ---
 
@@ -214,8 +214,8 @@ This project is licensed under the **ISC License**.
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [yourprofile](https://linkedin.com/in/yourprofile)
+- GitHub: [@yourusername](https://github.com/Rawat890)
+- LinkedIn: [yourprofile](https://www.linkedin.com/in/rohan-rawat-88898b271/)
 
 ---
 

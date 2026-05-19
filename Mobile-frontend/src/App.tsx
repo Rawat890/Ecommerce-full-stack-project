@@ -2,6 +2,9 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { fonts } from './utils/fonts';
 import { useFonts } from 'expo-font';
+import { Provider } from 'react-redux';
+import Navigation from './navigation/Navigation';
+import { store } from './store/store';
 
 const App = () => {
   const [loaded] = useFonts({
@@ -15,9 +18,9 @@ const App = () => {
     return null;
   }
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <Provider store={store}>
+      <Navigation />
+    </Provider>
   )
 }
 

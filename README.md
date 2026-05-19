@@ -67,12 +67,30 @@ Ecommerce-full-stack-project/
 │   └── .env              # Environment variables (not committed)
 │
 └── frontend/
-    ├── app/              # Expo Router pages (file-based routing)
-    ├── components/       # Reusable UI components
-    ├── store/            # Redux store, slices & sagas
-    ├── hooks/            # Custom React hooks
-    ├── constants/        # App-wide constants & theme
-    └── assets/           # Images, fonts & static files
+    ├── app/                    # Expo Router pages (file-based routing)
+    ├── modules/
+    │   ├── home/
+    │   │   ├── atoms/          # Smallest UI units (buttons, icons, text)
+    │   │   ├── molecules/      # Combinations of atoms (product card, search bar)
+    │   │   ├── organisms/      # Complex UI sections (product grid, hero banner)
+    │   │   ├── api/            # Home-specific API calls
+    │   │   └── index.js        # Module entry point
+    │   ├── cart/
+    │   │   ├── atoms/
+    │   │   ├── molecules/
+    │   │   ├── organisms/
+    │   │   ├── api/
+    │   │   └── index.js
+    │   ├── auth/
+    │   │   ├── atoms/
+    │   │   ├── molecules/
+    │   │   ├── organisms/
+    │   │   ├── api/
+    │   │   └── index.js
+    │   └── orders/             # (add your other modules here)
+    ├── store/                  # Redux store, slices & sagas
+    ├── constants/              # App-wide constants & theme
+    └── assets/                 # Images, fonts & static files
 ```
 
 ---

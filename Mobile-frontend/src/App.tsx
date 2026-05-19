@@ -5,6 +5,7 @@ import { useFonts } from 'expo-font';
 import { Provider } from 'react-redux';
 import Navigation from './navigation/Navigation';
 import { store } from './store/store';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 const App = () => {
   const [loaded] = useFonts({
@@ -19,7 +20,11 @@ const App = () => {
   }
   return (
     <Provider store={store}>
-      <Navigation />
+      <SafeAreaProvider>
+        <SafeAreaView edges={['top']} style={{flex:1}}>
+          <Navigation />
+        </SafeAreaView>
+      </SafeAreaProvider>
     </Provider>
   )
 }

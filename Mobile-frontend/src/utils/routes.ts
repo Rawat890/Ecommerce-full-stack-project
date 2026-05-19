@@ -4,5 +4,6 @@ export const SCREENS = {
  Categories: "Categories",
  Cart: "Cart",
  Account: "Account",
- MainNavigator: "MainNavigator"
+ MainNavigator: "MainNavigator",
+ Products: "Products"
 }

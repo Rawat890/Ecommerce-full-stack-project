@@ -231,9 +231,9 @@ This project is licensed under the **ISC License**.
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/Rawat890)
-- LinkedIn: [yourprofile](https://www.linkedin.com/in/rohan-rawat-88898b271/)
+**Rohan Rawat**
+- GitHub: [@Rawat890](https://github.com/Rawat890)
+- LinkedIn: [rohan-rawat](https://www.linkedin.com/in/rohan-rawat-88898b271/)
 
 ---
 

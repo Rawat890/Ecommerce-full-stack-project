@@ -3,10 +3,20 @@ import React, { useRef, useState } from 'react'
 import { dynamicDashboardData } from '@/src/utils/db';
 import AdCarousal from '../organisms/AdCarousal';
 import AnimatedLoader from '@/src/components/AnimatedLoader';
+import Categories from '../organisms/Categories';
+import Sponser from '../organisms/Sponser';
+import VerticalList from '../organisms/VerticalList';
+import HorizontalList from '../organisms/HorizontalList';
+import AnimatedHorizontalList from '../organisms/AnimatedHorizontalList';
 
 const PAGE_SIZE = 4;
 const sectionComponents: { [key: string]: React.ComponentType<any> } = {
- ad_carousal: AdCarousal
+ ad_carousal: AdCarousal,
+ categories: Categories,
+ sponser: Sponser,
+ vertical_list: VerticalList,
+ horizontal_list: HorizontalList,
+ animated_horizontal_list: AnimatedHorizontalList,
 }
 
 const MainList: React.FC<{ scrollYGlobal: any }> = ({ scrollYGlobal }) => {

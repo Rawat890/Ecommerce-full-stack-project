@@ -21,7 +21,7 @@ const AnimatedHorizontalList = (props: { data: any }) => {
           return (
             <Pressable onPress={() => navigate(SCREENS.Categories)} style={styles.imgContainer}>
               <Image
-                source={{ uri: item?.image_uri }}
+                source={{ uri: item?.item.image_uri }}
                 style={styles.image}
               />
             </Pressable>
@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     fontFamily: fonts.notoSemi,
-    fontSize: scale(12)
+    fontSize: scale(12),
+    marginBottom: scale(5)
   },
   image: {
     width: '100%',

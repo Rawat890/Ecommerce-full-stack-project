@@ -19,12 +19,13 @@ const HorizontalList = (props: { data: any }) => {
           return (
             <Pressable>
               <Image
-                source={{ uri: item?.image_uri }}
+                source={{ uri: item?.item.image_uri }}
                 style={styles.image}
               />
             </Pressable>
           )
         }}
+        contentContainerStyle={{paddingHorizontal: scale(5)}}
       />
     </View>
   )
@@ -42,8 +43,10 @@ const styles = StyleSheet.create({
     marginRight: scale(10)
   },
   textStyle: {
-    fontFamily: fonts.notoMedium,
-    fontSize: scale(12)
+    fontFamily: fonts.notoSemi,
+    fontSize: scale(14),
+    marginVertical: scale(5),
+    marginLeft: scale(5)
   }
 })
 

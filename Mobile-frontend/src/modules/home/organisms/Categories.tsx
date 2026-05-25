@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     marginBlock: scale(15)
   },
   contentImage: {
-    width: screenWidth * 0.12,
-    height: screenWidth * 0.12,
+    width: screenWidth * 0.15,
+    height: screenWidth * 0.15,
     resizeMode: 'cover'
   },
   nameText: {

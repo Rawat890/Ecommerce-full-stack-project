@@ -1,8 +1,7 @@
-import { View, Text, FlatList, NativeSyntheticEvent, NativeScrollEvent, RefreshControl } from 'react-native'
+import { View, Text, FlatList, NativeSyntheticEvent, NativeScrollEvent, RefreshControl, ActivityIndicator } from 'react-native'
 import React, { useRef, useState } from 'react'
 import { dynamicDashboardData } from '@/src/utils/db';
 import AdCarousal from '../organisms/AdCarousal';
-import AnimatedLoader from '@/src/components/AnimatedLoader';
 import Categories from '../organisms/Categories';
 import Sponser from '../organisms/Sponser';
 import VerticalList from '../organisms/VerticalList';
@@ -82,7 +81,7 @@ const MainList: React.FC<{ scrollYGlobal: any }> = ({ scrollYGlobal }) => {
    showsVerticalScrollIndicator={false}
    keyExtractor={(item, index) => index.toString()}
    ListFooterComponent={isLoadingMore ? (
-    <AnimatedLoader visible={isLoadingMore} />
+    <ActivityIndicator animating={isLoadingMore} size={'large'}/>
    ) : null}
   />
  )

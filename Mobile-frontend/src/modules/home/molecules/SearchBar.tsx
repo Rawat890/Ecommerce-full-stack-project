@@ -75,7 +75,9 @@ const styles = StyleSheet.create({
   justifyContent: 'space-between',
   alignItems: 'center',
   paddingHorizontal: scale(10),
-  gap: scale(4)
+  gap: scale(4),
+  marginTop: scale(-10),
+  marginBottom: scale(4)
  },
  toggleContainer: {
   width: '20%',

@@ -13,7 +13,7 @@ const FilmSlip = () => {
     {slipData.map((item, index) => (
      <View key={index} style={styles.gridItem}>
       <Text style={styles.gridText}>{"  "}{item}</Text>
-      <Text style={styles.gridText}>{"  "}{item}</Text>
+      <Text style={styles.gridText}>{"  "}</Text>
       <MaterialCommunityIcons name='star-four-points' size={20} color={COLORS.grey}/>
      </View>
     ))}
@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
  },
  gridText: {
   textAlign: 'center',
-  fontFamily: fonts.notoMedium
+  fontFamily: fonts.notoMedium,
+  color: COLORS.white
  }
 })
 export default FilmSlip

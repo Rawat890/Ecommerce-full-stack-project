@@ -23,7 +23,6 @@ const MenuHeader: React.FC<{ scrollY: any }> = ({ scrollY }) => {
     <Animated.View style={[styles.container, opacityFadingStyle]}>
       <View style={styles.flexRow}>
         {menuData.map((item, index) => {
-          console.log(focusedIndex === index)
           return (
             <MenuItem
               key={index}

@@ -7,10 +7,11 @@ import { SCREENS } from '@/src/utils/routes'
 
 const Sponser = (props: { data: any }) => {
  const { data } = props;
+ console.log("Sponsor -- ", data)
  return (
   <Pressable style={styles.container} onPress={() => navigate(SCREENS.Categories)}>
    <Image
-    source={{ uri: data?.data?.image_uri }}
+    source={{ uri: data?.data?.[0]?.image_uri }}
     style={styles.img}
    />
   </Pressable>
@@ -19,9 +20,9 @@ const Sponser = (props: { data: any }) => {
 
 const styles = StyleSheet.create({
  container: {
-  marginHorizontal: scale(15),
+  marginHorizontal: scale(5),
   height: scale(75),
-  width: screenWidth - 20,
+  width: screenWidth-13,
   justifyContent: 'center',
   alignItems: 'center'
  },

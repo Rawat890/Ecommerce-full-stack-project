@@ -1,12 +1,12 @@
-import { View, Text, StyleSheet, Pressable, FlatList, Image } from 'react-native'
-import React from 'react'
-import { scale } from 'react-native-size-matters'
-import { screenWidth } from '@/src/utils/constants'
-import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '@/src/utils/colors'
+import { screenWidth } from '@/src/utils/constants'
 import { fonts } from '@/src/utils/fonts'
 import { navigate } from '@/src/utils/navigationService'
 import { SCREENS } from '@/src/utils/routes'
+import { Ionicons } from '@expo/vector-icons'
+import React from 'react'
+import { FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native'
+import { scale } from 'react-native-size-matters'
 
 const VerticalList: React.FC<{ data: any }> = ({ data }) => {
   return (
@@ -27,11 +27,11 @@ const VerticalList: React.FC<{ data: any }> = ({ data }) => {
           return (
             <Pressable style={styles.itemContainer} onPress={() => navigate(SCREENS.Categories)}>
               <Image
-                source={{ uri: item?.image_uri }}
+                source={{ uri: item?.item?.image_uri }}
                 style={styles.image}
               />
-              <Text style={styles.productText}>{item?.title}</Text>
-              <Text style={styles.subtitle}>{item?.subtitle}</Text>
+              <Text style={styles.productText}>{item?.item?.title}</Text>
+              <Text style={styles.subtitle}>{item?.item?.subTitle}</Text>
             </Pressable>
           )
         }}
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
   headingText: {
     fontFamily: fonts.notoSemi,
-    color: COLORS.blueTint
+    color: COLORS.black
   },
   button: {
     padding: scale(10),
@@ -73,20 +73,20 @@ const styles = StyleSheet.create({
     color: COLORS.blueTint
   },
   itemContainer:{
-    width: '40%',
+    width: '47%',
     margin: scale(5),
-    height: scale(215),
+    height: '80%',
     marginBottom: scale(20),
     alignSelf: 'flex-start'
   },
   image:{
     width: '100%',
-    height: scale(100),
+    height: scale(200),
     resizeMode: 'cover'
   },
   productText:{
     fontFamily: fonts.notoSemi,
-    color: COLORS.blueTint
+    color: COLORS.black
   }, 
   subtitle:{
     fontFamily: fonts.notoSemi,
